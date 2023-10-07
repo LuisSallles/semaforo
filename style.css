@@ -7,6 +7,7 @@
 
 .container {
     padding-top: 100px;
+    height: 100vh;
 }
 
 .body-content {
@@ -16,14 +17,11 @@
 }
 
 .all-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
     padding-top: 65px;
 }
 
 .botton {
+    cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     height: 40px;
