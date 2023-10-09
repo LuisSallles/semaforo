@@ -1,21 +1,14 @@
-const auto = document.getElementById('auto')
-const light = document.getElementById('light')
-const yellow = document.getElementById('yellow')
-const green = document.getElementById('green')
-const red = document.getElementById('red')
+const img = document.getElementById('img') 
+const buttons = document.getElementById('buttons')
 
-function turnRed() { // Turn to red
-    light.src = 'imagens/red.png'
+const  trafficLight = (event) => {
+    turnOn.green()
 }
 
-function turnYellow() { // Turn to yellow
-    light.src = 'imagens/yellow.png'
+const turnOn = {
+    'red': () => img.src = 'imagens/red.png',
+    'yellow': () => img.src = 'imagens/yellow.png',
+    'green': () => img.src = 'imagens/green.png'
 }
 
-function turnGreen() { // Turn to Green
-    light.src = 'imagens/green.png'
-}
-
-red.addEventListener('click', turnRed)
-yellow.addEventListener('click', turnYellow)
-green.addEventListener('click', turnGreen)
+buttons.addEventListener('click', trafficLight)
